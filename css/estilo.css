@@ -1,0 +1,496 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(214, 214, 151);
+  background: url(../img/fondo.png);
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  color: #fafafa;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Nunito", sans-serif;
+  color: rgb(134, 40, 76);
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+.espaciado {
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 70px;
+  border-radius: 50px;
+}
+
+.barra {
+  background-color: rgb(134, 40, 76);
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.menuNav a {
+  font-size: 1.2rem;
+  color: #fafafa;
+  border-radius: 20px;
+}
+.menuNav a:hover {
+  color: rgb(134, 40, 76);
+  background-color: #fafafa;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.secciones {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.bgContacto {
+  background-color: beige;
+  background-image: url(../img/pa2\ .jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.parrafoProductos {
+  margin: auto;
+  padding: 20px;
+  height: auto;
+  border: rgb(134, 40, 76) solid 3px;
+  overflow: auto;
+  margin-top: 40px;
+}
+
+.parrafoTienda {
+  margin: auto;
+  padding: 20px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+}
+
+.parrafoContacto {
+  margin: auto;
+  padding: 20px;
+  margin-top: 30px;
+  color: rgb(252, 92, 167);
+}
+
+.fotoTienda {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedorTarjetas {
+  padding: 20px;
+}
+
+.tarjetas {
+  background-color: beige;
+  border-color: rgb(134, 40, 76);
+  border-width: 3px;
+}
+
+.imgProd {
+  height: 75%;
+  object-fit: contain;
+}
+
+.btnCard {
+  background-color: rgb(134, 40, 76);
+  color: #fafafa;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.btnCard:hover {
+  background-color: #fafafa;
+  color: rgb(134, 40, 76);
+}
+
+form {
+  width: 300px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(134, 40, 76);
+  color: #fafafa;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: rgb(134, 40, 76);
+}
+
+.instalaciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 25px;
+  grid-auto-flow: row;
+  grid-template-areas: "a1 b2";
+  margin-top: 40px;
+}
+
+.a1 {
+  grid-area: a1;
+  margin: auto;
+  padding: 20px;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+  overflow: auto;
+}
+
+.b2 {
+  grid-area: b2;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+  width: 100%;
+}
+
+.panelesTienda1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 40px;
+  grid-auto-flow: row;
+  column-gap: 15px;
+  row-gap: 15px;
+  grid-template-areas: "a b" "c d" "e f";
+}
+
+.a {
+  grid-area: a;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.b {
+  grid-area: b;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.c {
+  grid-area: c;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.d {
+  grid-area: d;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.e {
+  grid-area: e;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.f {
+  grid-area: f;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.panelesTienda2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 40px;
+  gap: 25px 25px;
+  grid-auto-flow: row;
+  column-gap: 15px;
+  row-gap: 15px;
+  grid-template-areas: "g h" "i j" "k l";
+}
+
+.g {
+  grid-area: g;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.h {
+  grid-area: h;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.i {
+  grid-area: i;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.j {
+  grid-area: j;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.k {
+  grid-area: k;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.l {
+  grid-area: l;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.panelesTienda3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 40px;
+  gap: 25px 25px;
+  grid-auto-flow: row;
+  column-gap: 15px;
+  row-gap: 15px;
+  grid-template-areas: "m n" "o p" "q r";
+}
+
+.m {
+  grid-area: m;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.n {
+  grid-area: n;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.o {
+  grid-area: o;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.p {
+  grid-area: p;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.q {
+  grid-area: q;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.r {
+  grid-area: r;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.panelesTienda4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 40px;
+  gap: 25px 25px;
+  grid-auto-flow: row;
+  column-gap: 15px;
+  row-gap: 15px;
+  grid-template-areas: "s t" "u v" "w x";
+}
+
+.s {
+  grid-area: s;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.t {
+  grid-area: t;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.u {
+  grid-area: u;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.v {
+  grid-area: v;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.w {
+  grid-area: w;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+.x {
+  grid-area: x;
+  height: 350px;
+  border: rgb(134, 40, 76) solid 3px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "A B C";
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer img {
+  width: 80px;
+  padding: 20px;
+}
+footer img:hover {
+  transform: scale(1.5, 1.5);
+}
+
+.A {
+  grid-area: A;
+  text-align: start;
+  padding-top: 30px;
+}
+
+.B {
+  grid-area: B;
+}
+
+.C {
+  grid-area: C;
+  text-align: end;
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 770px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "A B" "C C";
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "A" "B" "C";
+  }
+  .A {
+    grid-area: A;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .B {
+    grid-area: B;
+    justify-items: space-between;
+  }
+  .C {
+    grid-area: C;
+    text-align: end;
+    padding-top: 30px;
+  }
+  .instalaciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 25px;
+    grid-auto-flow: row;
+    grid-template-areas: "a1 a1" "b2 b2";
+    margin-top: 40px;
+  }
+  .panelesTienda1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    grid-template-areas: "a a" "b b" "c c" "d d" "e e" "f f";
+  }
+  .panelesTienda2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    grid-template-areas: "g g" "h h" "i i" "j j" "k k" "l l";
+  }
+  .panelesTienda3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    grid-template-areas: "m m" "n n" "o o" "p p" "q q" "r r";
+  }
+  .panelesTienda4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    grid-template-areas: "s s" "t t" "u u" "v v" "w w" "x x";
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,333 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.secciones {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.bgContacto {
+    background-color: beige;
+    background-image: url(../img/pa2\ .jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.parrafoProductos {
+    margin: auto;
+    padding: 20px;
+    height: auto;
+    border: $color-principal solid 3px;
+    overflow: auto;
+    margin-top: 40px;
+}
+
+.parrafoInicio {
+}
+
+
+.parrafoTienda {
+    margin: auto;
+    padding: 20px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+}
+
+.parrafoContacto {
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+    color: rgb(252, 92, 167);
+}
+
+.fotoTienda {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedorTarjetas {
+    padding: 20px;
+}
+
+.tarjetas {
+    background-color: beige;
+    border-color: $color-principal;
+    border-width: 3px;
+}
+
+.imgProd {
+    height: 75%;
+    object-fit: contain;
+}
+
+.btnCard {
+    background-color: $color-principal;
+    color: $color-fuentes;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    &:hover {
+        background-color: $color-fuentes;
+        color: $color-principal;
+    }
+}
+
+form {
+    width: 300px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+
+    &[type="text"],
+    &[type="email"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: $color-principal;
+    color: $color-fuentes;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-principal;
+    }
+}
+
+.instalaciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 25px;
+    grid-auto-flow: row;
+    grid-template-areas: "a1 b2";
+    margin-top: 40px;
+}
+
+.a1 {
+    grid-area: a1;
+    margin: auto;
+    padding: 20px;
+    height: 350px;
+    border: $color-principal solid 3px;
+    overflow: auto;
+}
+
+.b2 {
+    grid-area: b2;
+    height: 350px;
+    border: $color-principal solid 3px;
+    width: 100%;
+}
+
+.panelesTienda1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 40px;
+    grid-auto-flow: row;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-areas: "a b" "c d" "e f";
+}
+
+.a {
+    grid-area: a;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.b {
+    grid-area: b;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.c {
+    grid-area: c;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.d {
+    grid-area: d;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.e {
+    grid-area: e;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.f {
+    grid-area: f;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.panelesTienda2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 40px;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-areas: "g h" "i j" "k l";
+}
+
+.g {
+    grid-area: g;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.h {
+    grid-area: h;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.i {
+    grid-area: i;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.j {
+    grid-area: j;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.k {
+    grid-area: k;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.l {
+    grid-area: l;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.panelesTienda3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 40px;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-areas: "m n" "o p" "q r";
+}
+
+.m {
+    grid-area: m;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.n {
+    grid-area: n;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.o {
+    grid-area: o;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.p {
+    grid-area: p;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.q {
+    grid-area: q;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.r {
+    grid-area: r;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.panelesTienda4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 40px;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-areas: "s t" "u v" "w x";
+}
+
+.s {
+    grid-area: s;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.t {
+    grid-area: t;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.u {
+    grid-area: u;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.v {
+    grid-area: v;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.w {
+    grid-area: w;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
+
+.x {
+    grid-area: x;
+    height: 350px;
+    border: $color-principal solid 3px;
+}
